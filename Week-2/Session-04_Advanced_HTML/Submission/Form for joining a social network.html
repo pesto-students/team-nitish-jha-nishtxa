@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media form</title>
+</head>
+
+<body>
+    <h1> Join a Social network</h1>
+    <form action="submit-form.html" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="fullName">Full Name:</label>
+            <input type="text" name="fullName" id="fullName" style="margin-left: 5em; margin-top: 1em;" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" id="email" style="margin-left: 3.1em; margin-top: 1em;" required>
+        </div>
+
+        <div class="form-group">
+            <label for="about">About you:</label>
+            <textarea name="about" id="about" rows="3" cols="50" style="margin-left: 5em; margin-top: 1em;"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="picture">Photo:</label>
+            <input type="file" name="picture" id="picture" style="margin-left: 7.3em; margin-top: 1em;">
+        </div>
+
+        <div class="form-group">
+            <input type="submit" style="margin-top: 2em;">
+        </div>
+    </form>
+</body>
+
+</html>
