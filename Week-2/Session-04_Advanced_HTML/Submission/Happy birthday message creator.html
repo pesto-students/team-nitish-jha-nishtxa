@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBD</title>
+</head>
+
+<body>
+    <h1>Happy Birthday Message Creator</h1>
+    <form action="submit-form.html" method="POST">
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <input type="text" name="message" id="message" value="Happy Birthday!" style="margin-left: 5em; margin-top: 1em;">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" id="email" placeholder="name@domain.com" pattern="[a-zA-Z0-9-_\.]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*" style="margin-left: 2.2em; margin-top: 1em;">
+        </div>
+
+        <div class="form-group">
+            <label for="date">Date to send:</label>
+            <input type="date" name="date" id="date" style="margin-left: 3em; margin-top: 1em;">
+        </div>
+
+        <div class="form-group">
+            <label for="color">Message Color:</label>
+            <input type="color" name="color" id="color" style="margin-left: 2em; margin-top: 1em;">
+        </div>
+
+        <div class="form-group">
+            <label for="blinks">Number of blinks:</label>
+            <input type="number" name="blinks" id="blinks" min="0" max="10" value="0"
+                style="margin-left: 0.8em; margin-top: 1em;">
+        </div>
+
+        <div class="form-group">
+            <label for="volume">Music Volume:</label>
+            <input type="range" name="volume" id="volume" min="0" max="50" value="20"
+                style="margin-left: 2.2em; margin-top: 1em;">
+        </div>
+
+        <div class="form-group">
+            <button style="margin-top: 1em;">Send birthday message</button>
+        </div>
+    </form>
+</body>
+
+</html>
