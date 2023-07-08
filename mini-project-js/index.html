@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <script type="module" src="main.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="primary-container" class="primary-container">
+        <div class="prompt-container">
+            <img class="idea-image" alt="image-idea" src="https://images.pexels.com/photos/716398/pexels-photo-716398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"/>
+        </div>
+        <div>
+            <h1 style="color: white; text-align: center;"> Quote Generator</h1>
+            <div class="card">
+                <div class="input-area">
+                    <h5 style="font-weight: normal;">QUOTE THEME</h5>
+                    <textarea id="topic-input" name="topic-input"></textarea>
+                    <span class="example-text">Example: Importance of Parents!</span>
+                </div>
+                <div>
+                    <button id="generate-button" style="margin-top: 2vh;"> Generate!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="loader-container" class="loader-container">
+        <img style="width: 10vh;" alt="Loading..." src="https://media.tenor.com/NqKNFHSmbssAAAAi/discord-loading-dots-discord-loading.gif">
+    </div>
+    <div id="quotes-container" class="quotes-container">
+    </div>
+    <footer> © Developed By Nishtha</footer>
+</body>
+</html>
