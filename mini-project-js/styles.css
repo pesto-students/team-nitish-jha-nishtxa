@@ -1,0 +1,141 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Avenir Next LT Pro',sans-serif;
+}
+
+footer{
+    background-color: #b6a9af;
+    text-align: center;
+    font-weight: normal;
+    font-style: italic;
+}
+    
+
+.primary-container {
+    width:100%;
+    height: 100%;
+    min-height: 100vh;
+    background-color: #251e21;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.quotes-container {
+    width:100%;
+    height: 100%;
+    min-height: 100vh;
+    background-color: #251e21;
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.quotes-listing {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.loader-container {
+    width:100%;
+    height: 100%;
+    min-height: 100vh;
+    background-color: #251e21;
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.prompt-container{
+    /* margin-right: 2vh; */
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 40vh;
+}
+
+.input-area{
+    margin-left:1vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.example-text{
+    font-size: small; 
+    font-weight: lighter;
+    margin-top: 1vh;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+    transition: 0.3s;
+    height: 30vh;
+    width: 40vh;
+    border-radius: 1vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.helper{
+    width: 50vh;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    height: 30vh;
+    width: 50vh;
+    border-radius: 1vh;
+    margin: 1vh;
+    background-color: white;
+    padding: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.idea-image{
+    margin-top: 10vh;
+    width: 50vh;
+    height: 100vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .quote-card{
+        width: 40vh;
+        height: 50vh;
+    }
+    .quotes-container {
+        width: fit-content;
+    }
+    .idea-image{
+        width: 30vh;
+        height: 50vh;
+    }
+  }
+
+@media only screen and (max-width: 992px) and (orientation: landscape) {
+    .card {
+        width: 60vh;
+        height: 50vh;
+    }
+}
